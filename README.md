@@ -82,14 +82,17 @@ This script connects to the Ultraleap LeapC API and continuously streams hand tr
 
 - **20 landmarks** (one for each joint segment on thumb, index, middle, and ring fingers – 4 per finger)
 - **1 palm landmark** (the hand's central palm position)
+- **1 wrist landmark** 
 
-Each landmark includes `(x, y, z)` coordinates, resulting in a total of `21 * 3 = 63` float values. These are serialized as a comma-separated string and sent once per frame, ending with a newline (`\n`), e.g.:
+Each landmark includes `(x, y, z)` coordinates, resulting in a total of `22 * 3 = 66` float values. These are serialized as a comma-separated string and sent once per frame, ending with a newline (`\n`), e.g.:
 
 ```
-x0,y0,z0,x1,y1,z1,...,x20,y20,z20\n
+x0,y0,z0,x1,y1,z1,...,x21,y21,z21\n
 ```
 
 > 💡 The 21st landmark (index 20) corresponds to the **palm position**, used as a reference for angle calculations.
+> 💡 The 22nd landmark (index 21) corresponds to the **wrist position**, used as a reference for angle calculations.
+
 
 ---
 

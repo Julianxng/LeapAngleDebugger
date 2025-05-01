@@ -1,0 +1,10 @@
+[2025-05-01 13:31:40.563] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:31:40.664] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:31:49.104] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:33:14.016] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:33:14.081] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:34:00.451] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:34:00.492] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:37:30.042] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:37:30.143] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z
+[2025-05-01 13:37:39.361] [console] [info] calculate_centred_calibrations()#364:  Centred calibration is pointing down, rotating 180 in Z

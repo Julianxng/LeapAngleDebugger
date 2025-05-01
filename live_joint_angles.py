@@ -17,20 +17,22 @@ def angle_between(v1, v2):
 def process_line(line):
     try:
         values = [float(x) for x in line.split(',')]
-        if len(values) != 63:
-            print(f"Expected 63 floats (21 landmarks), got {len(values)}")
+        if len(values) != 66:
+            print(f"Expected 66 floats (22 landmarks), got {len(values)}")
             return
-        landmarks = np.array(values).reshape((21, 3))
+        landmarks = np.array(values).reshape((22, 3))
 
-        palm = landmarks[20]     # New landmark at index 20
+        palm = landmarks[20]
+        wrist = landmarks[21]     
         mcp = landmarks[4]       # MCP
         pip = landmarks[5]       # PIP
         dip = landmarks[6]       # DIP
         tip = landmarks[7]       # Tip
 
         vec_palm = mcp - palm
+        vec_wrist = mcp - wrist
         vec_mcp = pip - mcp
-        mcp_angle = angle_between(vec_palm, vec_mcp)
+        mcp_angle = angle_between(vec_wrist, vec_mcp)
 
         vec_pip = dip - pip
         pip_angle = angle_between(vec_mcp, vec_pip)

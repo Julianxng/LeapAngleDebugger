@@ -37,8 +37,13 @@ class Runner(leap.Listener):
                     all_positions.append(f"{pos.x},{pos.y},{pos.z}")
 
             # Append the palm position at the end (landmark 20)
+            # Append the palm position (landmark 20)
             palm = hand.palm.position
             all_positions.append(f"{palm.x},{palm.y},{palm.z}")
+
+            # Append the wrist position (landmark 21)
+            wrist = hand.arm.next_joint  # or hand.wrist.position if available
+            all_positions.append(f"{wrist.x},{wrist.y},{wrist.z}")
 
         if all_positions:
             self.last_update = ",".join(all_positions) + "\n"
